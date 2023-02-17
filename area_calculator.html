@@ -19,96 +19,130 @@
                 <h3 class="text-lg">Geometry Genius</h3>
             </div>
             <div>
-                <button class="bg-blue-400 font-medium text-white px-6 py-2 rounded-lg txt-center">Blog</button>
+                <button id="new-page" class="bg-blue-400 font-medium text-white px-6 py-2 rounded-lg txt-center">Blog</button>
             </div>
         </div>
     </header>
     <main>
         <section class="my-8">
-            <div class="grid grid-cols-1 gap-4 lg:grid-cols-4">
-                <div class="text-center p-8 border border-solid rounded">
-                    <img class="w-auto mb-4" src="images/triangle.png" alt="">
-                    <h3 class="font-medium text-2xl">Triangle</h3>
-                    <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
-                    <div class='grid grid-cols-4 gap-3 mt-4'>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                        <h4>cm</h4>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                        <h4>cm</h4>
+            <div class="flex flex-col lg:flex-row gap-3">
+                <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+                    <div id="random-color-triangle" class="text-center p-8 border border-solid rounded">
+                        <div class="h-48">
+                            <img class="mb-4 w-auto" src="images/triangle.png" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h3 class="font-medium text-2xl">Triangle</h3>
+                            <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
+                            <div class='grid grid-cols-4 gap-3 mt-4'>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                                <h4>cm</h4>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                                <h4>cm</h4>
+                            </div>
+                            <button
+                                class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                        </div>
                     </div>
-                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                    <div id="random-color-rectangle" class="text-center p-8 border border-solid rounded">
+                        <div class="h-48 justify-center">
+                            <img class="mb-4 w-auto" src="images/rectangle.png" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h3 class="font-medium text-2xl">Rectangle</h3>
+                            <h4 class="mt-2 font-light tracking-tight">Area (A) = w x l</h4>
+                            <div class='grid grid-cols-4 gap-3 mt-4'>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="w">
+                                <h4>cm</h4>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="l">
+                                <h4>cm</h4>
+                            </div>
+                            <button
+                                class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                        </div>
+                    </div>
+                    <div id="random-color-parallelogram" class="text-center p-8 border border-solid rounded">
+                        <div class="h-48">
+                            <img class="mb-4 w-auto" src="images/parallelogram.png" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h3 class="font-medium text-2xl">Parallelogram</h3>
+                            <h4 class="mt-2 font-light tracking-tight">Area (A) = b x h</h4>
+                            <div class='grid grid-cols-4 gap-3 mt-4'>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                                <h4>cm</h4>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                                <h4>cm</h4>
+                            </div>
+                            <button
+                                class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                        </div>
+                    </div>
+
+                    <div id="random-color-rhombus" class="text-center p-8 border border-solid rounded">
+                        <div class="h-48">
+                            <img class="mb-4 w-auto" src="images/rhombus.png" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h3 class="font-medium text-2xl">Rhombus</h3>
+                            <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
+                            <div class='grid grid-cols-4 gap-3 mt-4'>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                                <h4>cm</h4>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                                <h4>cm</h4>
+                            </div>
+                        </div>
+                        <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                    </div>
+                    <div id="random-color-pentagon" class="text-center p-8 border border-solid rounded">
+                        <div class="h-48">
+                            <img class="mb-4 w-auto" src="images/pentagon.png" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h3 class="font-medium text-2xl">Pentagon</h3>
+                            <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
+                            <div class='grid grid-cols-4 gap-3 mt-4'>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                                <h4>cm</h4>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                                <h4>cm</h4>
+                            </div>
+                            <button
+                                class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                        </div>
+                    </div>
+                    <div id="random-color-ellipse" class="text-center p-8 border border-solid rounded">
+                        <div class="h-48">
+                            <img class="mb-4 w-auto" src="images/ellipse.png" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <h3 class="font-medium text-2xl">Ellipse</h3>
+                            <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
+                            <div class='grid grid-cols-4 gap-3 mt-4'>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                                <h4>cm</h4>
+                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                                <h4>cm</h4>
+                            </div>
+                            <button
+                                class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-center p-8 border border-solid rounded">
-                    <img class="w-auto mb-4" src="images/rectangle.png" alt="">
-                    <h3 class="font-medium text-2xl">Rectangle</h3>
-                    <h4 class="mt-2 font-light tracking-tight">Area (A) = w x l</h4>
-                    <div class='grid grid-cols-4 gap-3 mt-4'>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="w">
-                        <h4>cm</h4>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="l">
-                        <h4>cm</h4>
+                <div>
+                    <div class="text-center p-8 border border-solid rounded">
+                        <img class="w-auto mb-4" src="images/triangle.png" alt="">
+                        <h3 class="font-medium text-2xl">Triangle</h3>
+                        <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
+                        <div class='grid grid-cols-4 gap-3 mt-4'>
+                            <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                            <h4>cm</h4>
+                            <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                            <h4>cm</h4>
+                        </div>
+                        <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
                     </div>
-                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
-                </div>
-                <div class="text-center p-8 border border-solid rounded">
-                    <img class="w-auto mb-4" src="images/parallelogram.png" alt="">
-                    <h3 class="font-medium text-2xl">Parallelogram</h3>
-                    <h4 class="mt-2 font-light tracking-tight">Area (A) = b x h</h4>
-                    <div class='grid grid-cols-4 gap-3 mt-4'>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                        <h4>cm</h4>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                        <h4>cm</h4>
-                    </div>
-                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
-                </div>
-                <div class="text-center p-8 border border-solid rounded">
-                    <img class="w-auto mb-4" src="images/triangle.png" alt="">
-                    <h3 class="font-medium text-2xl">Triangle</h3>
-                    <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
-                    <div class='grid grid-cols-4 gap-3 mt-4'>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                        <h4>cm</h4>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                        <h4>cm</h4>
-                    </div>
-                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
-                </div>
-                <div class="text-center p-8 border border-solid rounded">
-                    <img class="w-auto mb-4" src="images/rhombus.png" alt="">
-                    <h3 class="font-medium text-2xl">Rhombus</h3>
-                    <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
-                    <div class='grid grid-cols-4 gap-3 mt-4'>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                        <h4>cm</h4>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                        <h4>cm</h4>
-                    </div>
-                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
-                </div>
-                <div class="text-center p-8 border border-solid rounded">
-                    <img class="w-auto mb-4" src="images/pentagon.png" alt="">
-                    <h3 class="font-medium text-2xl">Pentagon</h3>
-                    <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
-                    <div class='grid grid-cols-4 gap-3 mt-4'>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                        <h4>cm</h4>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                        <h4>cm</h4>
-                    </div>
-                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
-                </div>
-                <div class="text-center p-8 border border-solid rounded">
-                    <img class="w-auto mb-4" src="images/ellipse.png" alt="">
-                    <h3 class="font-medium text-2xl">Ellipse</h3>
-                    <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
-                    <div class='grid grid-cols-4 gap-3 mt-4'>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                        <h4>cm</h4>
-                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                        <h4>cm</h4>
-                    </div>
-                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
                 </div>
 
 
@@ -117,7 +151,7 @@
         </section>
 
     </main>
-
+<script src="js/area_cal.js"></script>
 </body>
 
 </html>
