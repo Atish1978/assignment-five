@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Tailwind script file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-4">
+    <header>
+        <div class="flex flex-col lg:flex-row justify-between items-center rounded-lg bg-blue-100 p-4">
+            <div>
+                <h1 class="font-medium text-4xl">Interactive</h1>
+                <h3 class="text-lg">Geometry Genius</h3>
+            </div>
+            <div>
+                <button class="bg-blue-400 font-medium text-white px-6 py-2 rounded-lg txt-center">Blog</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="my-8">
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-4">
+                <div class="text-center p-8 border border-solid rounded">
+                    <img class="w-auto mb-4" src="images/triangle.png" alt="">
+                    <h3 class="font-medium text-2xl">Triangle</h3>
+                    <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
+                    <div class='grid grid-cols-4 gap-3 mt-4'>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                        <h4>cm</h4>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                        <h4>cm</h4>
+                    </div>
+                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                </div>
+                <div class="text-center p-8 border border-solid rounded">
+                    <img class="w-auto mb-4" src="images/rectangle.png" alt="">
+                    <h3 class="font-medium text-2xl">Rectangle</h3>
+                    <h4 class="mt-2 font-light tracking-tight">Area (A) = w x l</h4>
+                    <div class='grid grid-cols-4 gap-3 mt-4'>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="w">
+                        <h4>cm</h4>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="l">
+                        <h4>cm</h4>
+                    </div>
+                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                </div>
+                <div class="text-center p-8 border border-solid rounded">
+                    <img class="w-auto mb-4" src="images/parallelogram.png" alt="">
+                    <h3 class="font-medium text-2xl">Parallelogram</h3>
+                    <h4 class="mt-2 font-light tracking-tight">Area (A) = b x h</h4>
+                    <div class='grid grid-cols-4 gap-3 mt-4'>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                        <h4>cm</h4>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                        <h4>cm</h4>
+                    </div>
+                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                </div>
+                <div class="text-center p-8 border border-solid rounded">
+                    <img class="w-auto mb-4" src="images/triangle.png" alt="">
+                    <h3 class="font-medium text-2xl">Triangle</h3>
+                    <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
+                    <div class='grid grid-cols-4 gap-3 mt-4'>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                        <h4>cm</h4>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                        <h4>cm</h4>
+                    </div>
+                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                </div>
+                <div class="text-center p-8 border border-solid rounded">
+                    <img class="w-auto mb-4" src="images/rhombus.png" alt="">
+                    <h3 class="font-medium text-2xl">Rhombus</h3>
+                    <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
+                    <div class='grid grid-cols-4 gap-3 mt-4'>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                        <h4>cm</h4>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                        <h4>cm</h4>
+                    </div>
+                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                </div>
+                <div class="text-center p-8 border border-solid rounded">
+                    <img class="w-auto mb-4" src="images/pentagon.png" alt="">
+                    <h3 class="font-medium text-2xl">Pentagon</h3>
+                    <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
+                    <div class='grid grid-cols-4 gap-3 mt-4'>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                        <h4>cm</h4>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                        <h4>cm</h4>
+                    </div>
+                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                </div>
+                <div class="text-center p-8 border border-solid rounded">
+                    <img class="w-auto mb-4" src="images/ellipse.png" alt="">
+                    <h3 class="font-medium text-2xl">Ellipse</h3>
+                    <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
+                    <div class='grid grid-cols-4 gap-3 mt-4'>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                        <h4>cm</h4>
+                        <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                        <h4>cm</h4>
+                    </div>
+                    <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                </div>
+
+
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
