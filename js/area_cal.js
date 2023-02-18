@@ -80,3 +80,80 @@ document.getElementById('btn-rectangle-area').addEventListener('click', function
    rectangleWidthField.value = '';
    rectangleLengthField.value = '';
 })
+
+// Area of Parallelogram
+
+document.getElementById('btn-parallelogram-area').addEventListener('click', function(){
+    const baseParallelogramField=document.getElementById('base-parallelogram');
+    const baseParallelogramString=baseParallelogramField.innerText;
+    const baseParallelogramValue=parseFloat(baseParallelogramString);
+
+    const heightParallelogramField=document.getElementById('height-parallelogram');
+    const heightParallelogramString=heightParallelogramField.innerText;
+    const heightParallelogramValue=parseFloat(heightParallelogramString);
+
+    const areaParallelogram=baseParallelogramValue*heightParallelogramValue;
+
+    const areaParalleologramField=document.getElementById('area-parallelogram');
+   
+   
+    areaParalleologramField.innerText= areaParallelogram+' cm';
+})
+
+
+// Area of Rhombus
+
+document.getElementById('btn-rhombus-area').addEventListener('click', function(){
+    const baseRhombusField=document.getElementById('base-rhombus');
+    const baseRhombusString=baseRhombusField.innerText;
+    const baseRhombusValue=parseFloat(baseRhombusString);
+
+    const heightRhombusField=document.getElementById('height-rhombus');
+    const heightRhombusString=heightRhombusField.innerText;
+    const heightRhombusValue=parseFloat(heightRhombusString);
+
+    const areaRhombus=0.5*baseRhombusValue*heightRhombusValue;
+
+    const areaRhombusField=document.getElementById('area-rhombus');
+   
+   
+    areaRhombusField.innerText= areaRhombus+' cm';
+})
+
+// Area of Pentagon
+
+document.getElementById('btn-pentagon-area').addEventListener('click', function(){
+    const basePentagonField=document.getElementById('base-pentagon');
+    const basePentagonString=basePentagonField.innerText;
+    const basePentagonValue=parseFloat(basePentagonString);
+
+    const heightPentagonField=document.getElementById('height-pentagon');
+    const heightPentagonString=heightPentagonField.innerText;
+    const heightPentagonValue=parseFloat(heightPentagonString);
+
+    const areaPentagon=0.5*basePentagonValue*heightPentagonValue;
+
+    const areaPentagonField=document.getElementById('area-pentagon');
+   
+   
+    areaPentagonField.innerText= areaPentagon+' cm';
+})
+
+// Area of Ellipse
+
+document.getElementById('btn-ellipse-area').addEventListener('click', function(){
+    const baseEllipseField=document.getElementById('base-ellipse');
+    const baseEllipseString=baseEllipseField.innerText;
+    const baseEllipseValue=parseFloat(baseEllipseString);
+
+    const heightEllipseField=document.getElementById('height-ellipse');
+    const heightEllipseString=heightEllipseField.innerText;
+    const heightEllipseValue=parseFloat(heightEllipseString);
+
+    const areaEllipse=0.5*baseEllipseValue*heightEllipseValue;
+
+    const areaEllipseField=document.getElementById('area-ellipse');
+   
+   
+    areaEllipseField.innerText= areaEllipse+' cm';
+})

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area Calculator</title>
-    <link rel="stylesheet" href="styles/style.css">
     <!-- Tailwind script file -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -36,9 +35,11 @@
                             <h3 class="font-medium text-2xl">Triangle</h3>
                             <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
                             <div class='grid grid-cols-4 gap-3 mt-4'>
-                                <input id="input-base-triangle" class="bg-blue-100 p-1 rounde-lg" type="text" placeholder="b">
+                                <input id="input-base-triangle" class="bg-blue-100 p-1 rounde-lg" type="text"
+                                    placeholder="b">
                                 <h4>cm</h4>
-                                <input id="input-height-triangle"  class="bg-blue-100 p-1 rounde-lg" type="text" placeholder="h">
+                                <input id="input-height-triangle" class="bg-blue-100 p-1 rounde-lg" type="text"
+                                    placeholder="h">
                                 <h4>cm</h4>
                             </div>
                             <button id="btn-triangle-area"
@@ -53,9 +54,11 @@
                             <h3 class="font-medium text-2xl">Rectangle</h3>
                             <h4 class="mt-2 font-light tracking-tight">Area (A) = w x l</h4>
                             <div class='grid grid-cols-4 gap-3 mt-4'>
-                                <input id="input-width-rectangle" class="bg-blue-100 p-1 rounde-lg" type="text" placeholder="w">
+                                <input id="input-width-rectangle" class="bg-blue-100 p-1 rounde-lg" type="text"
+                                    placeholder="w">
                                 <h4>cm</h4>
-                                <input id="input-length-rectangle" class="bg-blue-100 p-1 rounde-lg" type="text" placeholder="l">
+                                <input id="input-length-rectangle" class="bg-blue-100 p-1 rounde-lg" type="text"
+                                    placeholder="l">
                                 <h4>cm</h4>
                             </div>
                             <button id="btn-rectangle-area"
@@ -68,14 +71,10 @@
                         </div>
                         <div class="mt-3">
                             <h3 class="font-medium text-2xl">Parallelogram</h3>
-                            <h4 class="mt-2 font-light tracking-tight">Area (A) = b x h</h4>
-                            <div class='grid grid-cols-4 gap-3 mt-4'>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                                <h4>cm</h4>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                                <h4>cm</h4>
-                            </div>
-                            <button
+                            <h4 class="mt-2 mb-2 font-light tracking-tight">Area (A) = b x h</h4>
+                            <h4 class="mb-4">b= <span id="base-parallelogram">10 </span> cm, h= <span
+                                    id="height-parallelogram">12</span> cm</h4>
+                            <button id="btn-parallelogram-area"
                                 class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
                         </div>
                     </div>
@@ -86,15 +85,12 @@
                         </div>
                         <div class="mt-3">
                             <h3 class="font-medium text-2xl">Rhombus</h3>
-                            <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
-                            <div class='grid grid-cols-4 gap-3 mt-4'>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                                <h4>cm</h4>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                                <h4>cm</h4>
-                            </div>
+                            <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x d1 x d2</h4>
+                            <h4 class="mb-4">d1= <span id="base-rhombus">16 </span> cm, d2= <span
+                                    id="height-rhombus">8</span> cm</h4>
+                            <button id="btn-rhombus-area"
+                                class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
                         </div>
-                        <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
                     </div>
                     <div id="random-color-pentagon" class="text-center p-8 border border-solid rounded">
                         <div class="h-48">
@@ -102,14 +98,10 @@
                         </div>
                         <div class="mt-3">
                             <h3 class="font-medium text-2xl">Pentagon</h3>
-                            <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
-                            <div class='grid grid-cols-4 gap-3 mt-4'>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                                <h4>cm</h4>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                                <h4>cm</h4>
-                            </div>
-                            <button
+                            <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x p x b</h4>
+                            <h4 class="mb-4">p= <span id="base-pentagon">6 </span> cm, b= <span
+                                id="height-pentagon">10</span> cm</h4>
+                            <button id="btn-pentagon-area"
                                 class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
                         </div>
                     </div>
@@ -119,47 +111,61 @@
                         </div>
                         <div class="mt-3">
                             <h3 class="font-medium text-2xl">Ellipse</h3>
-                            <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
-                            <div class='grid grid-cols-4 gap-3 mt-4'>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                                <h4>cm</h4>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                                <h4>cm</h4>
-                            </div>
-                            <button
+                            <h4 class="mt-2 font-light tracking-tight">Area (A) = peiab</h4>
+                            <h4 class="mb-4">a= <span id="base-ellipse">10 </span> cm, b= <span
+                                id="height-ellipse">4</span> cm</h4>
+                            <button id="btn-ellipse-area"
                                 class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="text-left p-8 border border-solid rounded h-96 w-80">
+                    <div class="text-left p-4 border border-solid rounded h-96 w-80">
 
                         <h2 class="font-medium text-2xl mb-8">Area Calculation</h2>
                         <div>
                             <div class=" flex gap-3 mt-2">
                                 <h3 class="font-medium">1. triangle</h3>
                                 <h3 id="area-triangle" class="font-medium"></h3>
-                                <button
-                                    class="bg-blue-400 text-white rounded-lg p-1 w-auto text-sm font-medium">Convert to m</button>
+                                <button class="bg-blue-400 text-white rounded-lg p-1 w-auto text-sm font-medium">Convert
+                                    to m</button>
                             </div>
                             <div class=" flex gap-3 mt-2">
-                                <h3 class="font-medium">1. Rectangle</h3>
+                                <h3 class="font-medium">2. Rectangle</h3>
                                 <h3 id="area-rectangle" class="font-medium"></h3>
-                                <button
-                                    class="bg-blue-400 text-white rounded-lg p-1 w-auto text-sm font-medium">Convert to m</button>
+                                <button class="bg-blue-400 text-white rounded-lg p-1 w-auto text-sm font-medium">Convert
+                                    to m</button>
                             </div>
+                            <div class=" flex gap-3 mt-2">
+                                <h3 class="font-medium">3. Parallelogram</h3>
+                                <h3 id="area-parallelogram" class="font-medium"></h3>
+                                <button class="bg-blue-400 text-white rounded-lg p-1 w-auto text-sm font-medium">Convert
+                                    to m</button>
+                            </div>
+                            <div class=" flex gap-3 mt-2">
+                                <h3 class="font-medium">4. Rhombus</h3>
+                                <h3 id="area-rhombus" class="font-medium"></h3>
+                                <button class="bg-blue-400 text-white rounded-lg p-1 w-auto text-sm font-medium">Convert
+                                    to m</button>
+                            </div>
+                            <div class=" flex gap-3 mt-2">
+                                <h3 class="font-medium">5. Pentagon</h3>
+                                <h3 id="area-pentagon" class="font-medium"></h3>
+                                <button class="bg-blue-400 text-white rounded-lg p-1 w-auto text-sm font-medium">Convert
+                                    to m</button>
+                            </div>
+                            <div class=" flex gap-3 mt-2">
+                                <h3 class="font-medium">6. Ellipse</h3>
+                                <h3 id="area-ellipse" class="font-medium"></h3>
+                                <button class="bg-blue-400 text-white rounded-lg p-1 w-auto text-sm font-medium">Convert
+                                    to m</button>
+                            </div>
+                        </div>
 
-                            <h3>2. Rectangle</h3>
-                            <h3>3. Parallelogram</h3>
-                            <h3>4. Rhombus</h3>
-                            <h3>5. Pentagon</h3>
-                            <h3>5 Ellipse</h3>
+
+
+
                     </div>
-
-
-
-
-                </div>
 
 
 
