@@ -19,6 +19,7 @@ document.getElementById('random-color-ellipse').addEventListener('mouseover', fu
     document.getElementById('random-color-ellipse').style.backgroundColor = BackgroundRandomColor();
 })
 
+// Answer of the questions in new page
 document.getElementById('new-page').addEventListener('click', function () {
     window.location.href = 'question_answer.html';
 })
