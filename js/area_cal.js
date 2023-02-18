@@ -21,6 +21,8 @@ document.getElementById('random-color-ellipse').addEventListener('mouseover', fu
 document.getElementById('new-page').addEventListener('click', function () {
     window.location.href = 'question_answer.html';
 })
+
+
 // Area of Triangle
 document.getElementById('btn-triangle-area').addEventListener('click', function () {
     const triangleBaseField = document.getElementById('input-base-triangle');
@@ -30,7 +32,7 @@ document.getElementById('btn-triangle-area').addEventListener('click', function 
     const triangleHeightField = document.getElementById('input-height-triangle');
     const inputHeightTriangleString = triangleHeightField.value;
     const inputHeightTriangle = parseFloat(inputHeightTriangleString);
-
+  
     let triagleArea;
 
     if (!isNaN(inputBaseTriangle) && !isNaN(inputHeightTriangle) && inputBaseTriangle > 0 && inputHeightTriangle > 0) {
@@ -84,18 +86,15 @@ document.getElementById('btn-rectangle-area').addEventListener('click', function
    rectangleLengthField.value = '';
 })
 
+
 // Area of Parallelogram
 
 document.getElementById('btn-parallelogram-area').addEventListener('click', function(){
-    const baseParallelogramField=document.getElementById('base-parallelogram');
-    const baseParallelogramString=baseParallelogramField.innerText;
-    const baseParallelogramValue=parseFloat(baseParallelogramString);
+    
+   let number1= createValueInteger('base-parallelogram');
+   let number2= createValueInteger('height-parallelogram');
 
-    const heightParallelogramField=document.getElementById('height-parallelogram');
-    const heightParallelogramString=heightParallelogramField.innerText;
-    const heightParallelogramValue=parseFloat(heightParallelogramString);
-
-    const areaParallelogram=baseParallelogramValue*heightParallelogramValue;
+    const areaParallelogram=number1*number2;
 
     const areaParalleologramField=document.getElementById('area-parallelogram');
    
@@ -108,15 +107,11 @@ document.getElementById('btn-parallelogram-area').addEventListener('click', func
 // Area of Rhombus
 
 document.getElementById('btn-rhombus-area').addEventListener('click', function(){
-    const baseRhombusField=document.getElementById('base-rhombus');
-    const baseRhombusString=baseRhombusField.innerText;
-    const baseRhombusValue=parseFloat(baseRhombusString);
+   
+    let number1= createValueInteger('base-rhombus');
+    let number2= createValueInteger('height-rhombus');
 
-    const heightRhombusField=document.getElementById('height-rhombus');
-    const heightRhombusString=heightRhombusField.innerText;
-    const heightRhombusValue=parseFloat(heightRhombusString);
-
-    const areaRhombus=0.5*baseRhombusValue*heightRhombusValue;
+    const areaRhombus=0.5*number1*number2;
 
     const areaRhombusField=document.getElementById('area-rhombus');
    
@@ -127,15 +122,11 @@ document.getElementById('btn-rhombus-area').addEventListener('click', function()
 // Area of Pentagon
 
 document.getElementById('btn-pentagon-area').addEventListener('click', function(){
-    const basePentagonField=document.getElementById('base-pentagon');
-    const basePentagonString=basePentagonField.innerText;
-    const basePentagonValue=parseFloat(basePentagonString);
+   
+    let number1= createValueInteger('base-pentagon');
+    let number2= createValueInteger('height-pentagon');
 
-    const heightPentagonField=document.getElementById('height-pentagon');
-    const heightPentagonString=heightPentagonField.innerText;
-    const heightPentagonValue=parseFloat(heightPentagonString);
-
-    const areaPentagon=0.5*basePentagonValue*heightPentagonValue;
+    const areaPentagon=0.5*number1*number2;
 
     const areaPentagonField=document.getElementById('area-pentagon');
    
@@ -146,15 +137,11 @@ document.getElementById('btn-pentagon-area').addEventListener('click', function(
 // Area of Ellipse
 
 document.getElementById('btn-ellipse-area').addEventListener('click', function(){
-    const baseEllipseField=document.getElementById('base-ellipse');
-    const baseEllipseString=baseEllipseField.innerText;
-    const baseEllipseValue=parseFloat(baseEllipseString);
+    
+    let number1= createValueInteger('base-ellipse');
+    let number2= createValueInteger('height-ellipse');
 
-    const heightEllipseField=document.getElementById('height-ellipse');
-    const heightEllipseString=heightEllipseField.innerText;
-    const heightEllipseValue=parseFloat(heightEllipseString);
-
-    const areaEllipse=(3.14*baseEllipseValue*heightEllipseValue).toFixed(2);
+    const areaEllipse=(3.14*number1*number2).toFixed(2);
 
     const areaEllipseField=document.getElementById('area-ellipse');
    
