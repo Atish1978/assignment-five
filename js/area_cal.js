@@ -34,6 +34,7 @@ document.getElementById('btn-triangle-area').addEventListener('click', function 
     let triagleArea;
 
     if (!isNaN(inputBaseTriangle) && !isNaN(inputHeightTriangle) && inputBaseTriangle > 0 && inputHeightTriangle > 0) {
+        document.getElementById('area-triangle-section').style.display='block';
         triagleArea = 0.5 * inputBaseTriangle * inputHeightTriangle;
 
     } else {
@@ -45,6 +46,7 @@ document.getElementById('btn-triangle-area').addEventListener('click', function 
    
    if (!isNaN(triagleArea)){
    areaTriangleField.innerText= triagleArea;
+   
    }
 
     triangleBaseField.value = '';
@@ -74,6 +76,7 @@ document.getElementById('btn-rectangle-area').addEventListener('click', function
    const areaRectangleField=document.getElementById('area-rectangle');
    
    if (!isNaN(rectangleArea)){
+    document.getElementById('area-rectangle-section').style.display='block';
     areaRectangleField.innerText= rectangleArea;
    }
 
@@ -96,8 +99,9 @@ document.getElementById('btn-parallelogram-area').addEventListener('click', func
 
     const areaParalleologramField=document.getElementById('area-parallelogram');
    
-   
+    document.getElementById('area-parallelogram-section').style.display='block';
     areaParalleologramField.innerText= areaParallelogram;
+   
 })
 
 
@@ -116,7 +120,7 @@ document.getElementById('btn-rhombus-area').addEventListener('click', function()
 
     const areaRhombusField=document.getElementById('area-rhombus');
    
-   
+    document.getElementById('area-rhombus-section').style.display='block';
     areaRhombusField.innerText= areaRhombus;
 })
 
@@ -135,7 +139,7 @@ document.getElementById('btn-pentagon-area').addEventListener('click', function(
 
     const areaPentagonField=document.getElementById('area-pentagon');
    
-   
+    document.getElementById('area-pentagon-section').style.display='block';
     areaPentagonField.innerText= areaPentagon;
 })
 
@@ -154,6 +158,6 @@ document.getElementById('btn-ellipse-area').addEventListener('click', function()
 
     const areaEllipseField=document.getElementById('area-ellipse');
    
-   
+    document.getElementById('area-ellipse-section').style.display='block';
     areaEllipseField.innerText= areaEllipse;
 })
