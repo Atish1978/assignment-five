@@ -19,7 +19,8 @@
                 <h3 class="text-lg">Geometry Genius</h3>
             </div>
             <div>
-                <button id="new-page" class="bg-blue-400 font-medium text-white px-6 py-2 rounded-lg txt-center">Blog</button>
+                <button id="new-page"
+                    class="bg-blue-400 font-medium text-white px-6 py-2 rounded-lg txt-center">Blog</button>
             </div>
         </div>
     </header>
@@ -35,12 +36,12 @@
                             <h3 class="font-medium text-2xl">Triangle</h3>
                             <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
                             <div class='grid grid-cols-4 gap-3 mt-4'>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
+                                <input id="input-base-triangle" class="bg-blue-100 p-1 rounde-lg" type="text" placeholder="b">
                                 <h4>cm</h4>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
+                                <input id="input-height-triangle"  class="bg-blue-100 p-1 rounde-lg" type="text" placeholder="h">
                                 <h4>cm</h4>
                             </div>
-                            <button
+                            <button id="btn-triangle-area"
                                 class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
                         </div>
                     </div>
@@ -52,12 +53,12 @@
                             <h3 class="font-medium text-2xl">Rectangle</h3>
                             <h4 class="mt-2 font-light tracking-tight">Area (A) = w x l</h4>
                             <div class='grid grid-cols-4 gap-3 mt-4'>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="w">
+                                <input id="input-width-rectangle" class="bg-blue-100 p-1 rounde-lg" type="text" placeholder="w">
                                 <h4>cm</h4>
-                                <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="l">
+                                <input id="input-length-rectangle" class="bg-blue-100 p-1 rounde-lg" type="text" placeholder="l">
                                 <h4>cm</h4>
                             </div>
-                            <button
+                            <button id="btn-rectangle-area"
                                 class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
                         </div>
                     </div>
@@ -131,18 +132,33 @@
                     </div>
                 </div>
                 <div>
-                    <div class="text-center p-8 border border-solid rounded">
-                        <img class="w-auto mb-4" src="images/triangle.png" alt="">
-                        <h3 class="font-medium text-2xl">Triangle</h3>
-                        <h4 class="mt-2 font-light tracking-tight">Area (A) = 0.5 x b x h</h4>
-                        <div class='grid grid-cols-4 gap-3 mt-4'>
-                            <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="b">
-                            <h4>cm</h4>
-                            <input class="bg-blue-100 p-1 rounde-lg" type="number" placeholder="h">
-                            <h4>cm</h4>
-                        </div>
-                        <button class="mt-12 bg-blue-400 text-white font-medium rounded-lg p-2 w-3/4">Calculate</button>
+                    <div class="text-left p-8 border border-solid rounded h-96 w-80">
+
+                        <h2 class="font-medium text-2xl mb-8">Area Calculation</h2>
+                        <div>
+                            <div class=" flex gap-3 mt-2">
+                                <h3 class="font-medium">1. triangle</h3>
+                                <h3 id="area-triangle" class="font-medium"></h3>
+                                <button
+                                    class="bg-blue-400 text-white rounded-lg p-1 w-auto text-sm font-medium">Convert to m</button>
+                            </div>
+                            <div class=" flex gap-3 mt-2">
+                                <h3 class="font-medium">1. Rectangle</h3>
+                                <h3 id="area-rectangle" class="font-medium"></h3>
+                                <button
+                                    class="bg-blue-400 text-white rounded-lg p-1 w-auto text-sm font-medium">Convert to m</button>
+                            </div>
+
+                            <h3>2. Rectangle</h3>
+                            <h3>3. Parallelogram</h3>
+                            <h3>4. Rhombus</h3>
+                            <h3>5. Pentagon</h3>
+                            <h3>5 Ellipse</h3>
                     </div>
+
+
+
+
                 </div>
 
 
@@ -151,7 +167,8 @@
         </section>
 
     </main>
-<script src="js/area_cal.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/area_cal.js"></script>
 </body>
 
 </html>
