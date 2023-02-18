@@ -44,7 +44,7 @@ document.getElementById('btn-triangle-area').addEventListener('click', function 
    const areaTriangleField=document.getElementById('area-triangle');
    
    if (!isNaN(triagleArea)){
-   areaTriangleField.innerText= triagleArea+' cm';
+   areaTriangleField.innerText= triagleArea;
    }
 
     triangleBaseField.value = '';
@@ -74,7 +74,7 @@ document.getElementById('btn-rectangle-area').addEventListener('click', function
    const areaRectangleField=document.getElementById('area-rectangle');
    
    if (!isNaN(rectangleArea)){
-    areaRectangleField.innerText= rectangleArea+' cm';
+    areaRectangleField.innerText= rectangleArea;
    }
 
    rectangleWidthField.value = '';
@@ -97,7 +97,7 @@ document.getElementById('btn-parallelogram-area').addEventListener('click', func
     const areaParalleologramField=document.getElementById('area-parallelogram');
    
    
-    areaParalleologramField.innerText= areaParallelogram+' cm';
+    areaParalleologramField.innerText= areaParallelogram;
 })
 
 
@@ -117,7 +117,7 @@ document.getElementById('btn-rhombus-area').addEventListener('click', function()
     const areaRhombusField=document.getElementById('area-rhombus');
    
    
-    areaRhombusField.innerText= areaRhombus+' cm';
+    areaRhombusField.innerText= areaRhombus;
 })
 
 // Area of Pentagon
@@ -136,7 +136,7 @@ document.getElementById('btn-pentagon-area').addEventListener('click', function(
     const areaPentagonField=document.getElementById('area-pentagon');
    
    
-    areaPentagonField.innerText= areaPentagon+' cm';
+    areaPentagonField.innerText= areaPentagon;
 })
 
 // Area of Ellipse
@@ -150,10 +150,10 @@ document.getElementById('btn-ellipse-area').addEventListener('click', function()
     const heightEllipseString=heightEllipseField.innerText;
     const heightEllipseValue=parseFloat(heightEllipseString);
 
-    const areaEllipse=0.5*baseEllipseValue*heightEllipseValue;
+    const areaEllipse=(3.14*baseEllipseValue*heightEllipseValue).toFixed(2);
 
     const areaEllipseField=document.getElementById('area-ellipse');
    
    
-    areaEllipseField.innerText= areaEllipse+' cm';
+    areaEllipseField.innerText= areaEllipse;
 })
